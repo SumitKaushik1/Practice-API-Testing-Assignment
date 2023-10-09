@@ -1,0 +1,22 @@
+*BINARIES ARE HAVE ->(INSTALLER TO INSTALL THE APPLCIATION AND ADD HE BIN FILE IN THE ENVIRONMENT VARIABLE SO THAT OS CAN USE THE BIN FILE) SINCE IT IS MAIN TO RUN LOCALLY SO IT REQUIRE THE PORT NUMBER 8080 AND THIS APPLICATION IS MEANT OT REPOSNE ONLY JSON OBJECT WHICH CAN BE GET BY SENDING REQUEST FROM POSTMAN
+
+
+
+IF APPLICATION IS NOT RUNNIGN IN LOCAL PC THNE IT CAN BE RUN IN DOCKER
+
+ChatGPT
+Yes, it's possible to run an application in a Docker container even if it's not running on your local PC. Docker allows you to package an application and its dependencies into a container, which can then be run on any system that supports Docker, regardless of the host operating system or environment. This makes it easier to ensure that your application behaves consistently across different environments.
+
+To run an application in a Docker container, you would typically follow these steps:
+
+Create a Dockerfile: You need to create a Dockerfile for your application. This file defines the image that Docker will use to create containers. It specifies the base image, sets up the environment, and copies your application code and dependencies into the container.
+
+Build the Docker Image: Once you have a Dockerfile, you can use the docker build command to build a Docker image from it. This image will contain your application and all its dependencies.
+
+Run the Docker Container: After building the image, you can use the docker run command to start a container based on that image. You can specify various options like ports, volumes, and environment variables when running the container to configure its behavior.
+
+Access the Application: Once the container is running, you can access your application as if it were running locally. You can use a web browser or other client software to interact with it, depending on the type of application.
+
+Docker abstracts away many of the differences between local development environments, making it easier to ensure that your application runs consistently across different systems. It's a popular choice for DevOps and software deployment because of its portability and ease of use.
+
+Keep in mind that while Docker can help ensure consistency and portability, you still need to consider potential differences in the runtime environment, such as differences in networking, storage, and host system configuration, when running your application in containers.

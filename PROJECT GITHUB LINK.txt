@@ -1,0 +1,3 @@
+https://github.com/abhishek-pingsafe/sdet-assignment#readme
+
+FOR BINARIES IE INSTALLER AND ALL ->https://github.com/abhishek-pingsafe/sdet-assignment/releases/tag/v0.0.1
