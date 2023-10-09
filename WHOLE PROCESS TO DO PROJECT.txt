@@ -1,12 +1,14 @@
 1.firstly  import the gihub project ie clone it thne automaticlaly the .git repository is made automatically for version control 
 (git repository also contain the github documents that it require from web like for dependencies)
 
-2. then see which programming language application is it is (then see video on you tube to run that progammring language simple hello world program how to run  in 100 seconds)
+2. then see which programming language application is it is (then see video on you tube to run that progammring language simple hello world program how to run  in 100 seconds) adn then download the sdk of it  and put in the evvironemtn varaibel 
 
 3.then download the database it supports at see basic video how to setup and make database or schema basic
 
-4.then you should download the proper compiler to compile the application correspdonign to programming language.
+4.then you should download the proper compiler to compile the application correspdonign to programming language. and put in the environment variable
 
-5. then run the program then server will be started 
+5.then download the ide which support that progarmming language then from seteting program structure choose the compiler it it 
 
-6. then open postman and make the request
+6. then run the program then server will be started 
+
+7. then open postman and make the request
