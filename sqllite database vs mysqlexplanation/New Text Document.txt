@@ -1,0 +1,52 @@
+i did not installed sqllite in my system it might be problem
+
+ChatGPT
+Yes, not having SQLite installed on your system could indeed be the problem. The github.com/mattn/go-sqlite3 package is a SQLite driver for Go, and it relies on the SQLite library being available on your system.
+
+To resolve this issue, you should install SQLite on your system. Here are the steps you can follow:
+
+Download SQLite:
+
+Visit the official SQLite website: https://www.sqlite.org/download.html
+Download the appropriate precompiled binary for your operating system. For Windows, you can download the "sqlite-shell" binary.
+Install SQLite:
+
+On Windows, you can extract the downloaded ZIP file and place the sqlite3.exe executable in a directory that's included in your system's PATH environment variable. This will make it accessible from the command line.
+Verify Installation:
+
+Open a command prompt or terminal and run sqlite3 to ensure that SQLite is correctly installed and accessible.
+Rebuild Your Go Program:
+
+After installing SQLite, return to your Go program and rebuild it using the go build command. It should now be able to find and use the SQLite library.
+Once you've installed SQLite and rebuilt your Go program, it should work without encountering the "unimplemented: 64-bit mode" error, assuming that your system is 64-bit and your Go environment is correctly configured.
+
+If you encounter any further issues or have additional questions, please feel free to ask.
+
+
+
+
+User
+so sql lite is not installed then this error might come # runtime/cgo
+cc1.exe: sorry, unimplemented: 64-bit mode not compiled in
+ChatGPT
+Yes, that's correct. The error message "cc1.exe: sorry, unimplemented: 64-bit mode not compiled in" typically occurs when you're trying to compile a Go program that relies on the cgo tool (used for interfacing with C code), and the C compiler (cc1.exe in this case) doesn't support 64-bit mode, or it's not properly configured for 64-bit mode.
+
+Since the github.com/mattn/go-sqlite3 package uses cgo to interface with the SQLite C library, having a compatible C compiler and the necessary libraries installed is crucial.
+
+In your case, the absence of the SQLite library was likely the root cause of the error. Once you've installed SQLite and ensured that it's accessible from your command line, you should be able to rebuild your Go program without encountering the "64-bit mode not compiled in" error.
+
+If you've successfully installed SQLite and are still facing issues, please ensure that you have a compatible C compiler installed and correctly configured for your 64-bit Go environment.
+
+
+
+
+User
+sqlite does not require server instaed mysql requrie its own sever
+ChatGPT
+You are absolutely correct. SQLite and MySQL have different approaches when it comes to database management.
+
+SQLite is a self-contained, serverless, embedded database engine. It operates as a file-based database and doesn't require a separate server process. You can use SQLite directly within your application, and it stores its data in a single file. This makes SQLite an excellent choice for embedded systems and lightweight applications.
+
+MySQL, on the other hand, is a client-server relational database management system (RDBMS). It requires a dedicated MySQL server process to handle database requests. MySQL server runs as a separate service or process, and applications communicate with it over a network connection.
+
+So, if you're using SQLite in your Go application, you don't need to run a separate database server like you would with MySQL. Instead, you interact with the SQLite database file directly within your application. This is one of the advantages of SQLite for small to medium-sized applications, as it simplifies the setup and maintenance compared to server-based RDBMS like MySQL or PostgreSQL

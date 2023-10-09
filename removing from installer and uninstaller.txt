@@ -1,0 +1,3 @@
+while uninstalling it will ask which directory it has to remove compeltly from form c (uninsalltion ie mean remove from register from c drive everything )
+
+file which is not in the uninsaller you can remove directly from he c drive and tehinsslaler also 

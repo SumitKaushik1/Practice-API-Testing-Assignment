@@ -1,0 +1,3 @@
+*down load sql lite then add to the environment variable 
+*intellij find the sqllite of compouter and sdk kit of the go language otherwise will down the load the plugin for teh or dependencies of sqllite if itis free and go if its is free 
+*note intellij also uses the .git repostory to mainain the version of dependeices you will get errors while importing the dependencies so you should not delete the .git file  other while it will error in depedencies 

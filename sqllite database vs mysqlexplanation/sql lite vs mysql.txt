@@ -1,0 +1,15 @@
+sqllite contain the file in the zip and it doesnot contain the installer so you have to manually put hte file in teh c folder and then manually add the bin path where the .exe file of sqllite is there in the environment variable  and os will directly use the bin file 
+now opne folder on in which you want to make database now when you directly run the command then os willl use the bin folder of sqlite directly to make the database
+sqlite is the low level database ie os can understand ie it wi writen in c programmeing language os can easily interact with and window 10 is written in c c++ and c#
+
+* cli ->os->bin of sqlite->os -> harddisk 
+
+whne you give command in cli then os use the bin of sqlite adn make the database
+
+*but in  the mysql is also in c and c++ but os needs teh server to interact ie firstly you have to start the server from services ie load in the ram (so many apis) and then os interact with server 
+whne you give command to cli then os takes the server help to make teh request 
+
+cli ->os ->server->os ->hardisk
+
+
+but in sqllite there si no server no need ot start the server 

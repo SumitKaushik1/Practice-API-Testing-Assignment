@@ -1,0 +1,1 @@
+Prebuilt binaries are delivered as a zip -file which can be extracted to a target folder on the computer and run as-is.

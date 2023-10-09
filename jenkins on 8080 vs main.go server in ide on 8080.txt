@@ -1,0 +1,6 @@
+note-->
+the jenkins run on the 8080   and we have to start the server form servicies then server run in the ram  and if you want to stop same services stop it 
+similarly main.go program run on 8080 and we have to start the program then this program make the server and  server run in the ram and if you want to stop the server then stop the ide
+
+jenkins server will return teh html page (xml)or hte gui after sending the request so can be opened in browser 
+where main.go will returnt he json data so it canbe opened inpostman

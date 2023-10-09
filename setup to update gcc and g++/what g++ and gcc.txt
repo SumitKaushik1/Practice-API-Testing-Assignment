@@ -1,0 +1,1 @@
+g++ is used to compile C++ program. gcc is used to compile C program. g++ can compile any . c or . cpp files but they will be treated as C++ files only.

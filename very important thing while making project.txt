@@ -1,0 +1,27 @@
+1.every language needs different ids to run the program best is the intellij compnay to run all types of languages 
+2.every thing need the database some company provide the server(to get the command ) adn gui and cli(to apply the command ), server(it has all exe file and all thats why you have to start the server form services of mysql ) interact with os to make datab ase like mysql  and it also needs the installer to put the file in the c folder and some company only provide database donot provide teh server and gui and cli so os directly can use the exe file of the database make the records 
+
+3. note plugins are limited to particular application it si made respective to that not for full os 
+
+4.golang intellij will download its own go sdk or use hte compouter go sdk\
+ChatGPT
+In IntelliJ IDEA with the Go plugin installed, you have the option to use either the Go SDK installed on your computer or download and manage your own Go SDK within the IDE. Here's how it works:
+
+Using the Go SDK Installed on Your Computer:
+
+By default, IntelliJ IDEA will attempt to detect the Go SDK installed on your computer.
+If it detects a Go SDK, it will use that SDK for your Go projects.
+You can configure which Go SDK version to use for your project by going to "File" > "Project Structure" > "Project Settings" > "Project" > "Project SDK" and selecting the Go SDK from the dropdown list.
+Downloading and Managing a Go SDK Within IntelliJ IDEA:
+
+IntelliJ IDEA also provides the option to download and manage a Go SDK within the IDE.
+You can do this by going to "File" > "Project Structure" > "Platform Settings" > "SDKs" and clicking the "+" button to add a new SDK.
+Choose "Go SDK" and then select the option to "Download" a Go SDK version.
+You can choose the version of Go you want to download and use.
+IntelliJ IDEA will download and manage this SDK for your project independently of the Go SDK installed on your computer.
+Using the SDK managed by IntelliJ IDEA can be useful if you need to work with different versions of Go for different projects or if you want to ensure that your project uses a specific version of Go regardless of what is installed on your computer.
+
+
+5. there is the plugin in the vs code inwhich provide the run button in teh vs code ot run no need to run from terminal 
+
+6.indexing means mapping files in the form of tree easily find

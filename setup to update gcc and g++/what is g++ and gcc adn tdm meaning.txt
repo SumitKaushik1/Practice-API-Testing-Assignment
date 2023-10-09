@@ -1,0 +1,11 @@
+g++ is used to compile C++ program. gcc is used to compile C program. g++ can compile any . c or . cpp files but they will be treated as C++ files only
+TDM-GCC is not specifically a C++ compiler but rather a distribution of the GNU Compiler Collection (GCC) for Windows. It includes both the C and C++ compilers (gcc for C and g++ for C++) along with other tools and libraries necessary for compiling and building C and C++ programs on Windows.
+
+So, when you install TDM-GCC, you get both gcc for compiling C code and g++ for compiling C++ code. It's a comprehensive development environment for both languages, and you can use it for C or C++ development on Windows.
+
+In summary, TDM-GCC provides the GCC suite, which includes compilers for both C and C++, making it suitable for developing and compiling programs in both languages on Windows.
+
+
+it conatins the installer ie set the environemtn variable and place file in c drive adn registry
+
+
