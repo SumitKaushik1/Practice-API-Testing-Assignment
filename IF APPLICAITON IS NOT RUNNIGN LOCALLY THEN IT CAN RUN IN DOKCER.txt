@@ -1,8 +1,8 @@
-*BINARIES ARE HAVE ->(INSTALLER TO INSTALL THE APPLCIATION AND ADD HE BIN FILE IN THE ENVIRONMENT VARIABLE SO THAT OS CAN USE THE BIN FILE) SINCE IT IS MAIN TO RUN LOCALLY SO IT REQUIRE THE PORT NUMBER 8080 AND THIS APPLICATION IS MEANT OT REPOSNE ONLY JSON OBJECT WHICH CAN BE GET BY SENDING REQUEST FROM POSTMAN
 
+binaries are basically contain the installer which place the file in the c drive adn in the enviromnet variable ,since it si the application after runnign or clicking the icon itw ill run on the 8080 port so this application you can make request by postman only b/z this applicaiton gets teh resposne injaon adn reutrn the output in json 
 
-
-IF APPLICATION IS NOT RUNNIGN IN LOCAL PC THNE IT CAN BE RUN IN DOCKER
+binaries are not installing in the local pc b/z it does not follwo certain guidline thne it cna be run in the docker ie vm (collection of virtual machine or containers )
+IF APPLICATION IS NOT RUNNIGN IN LOCAL PC THNE IT CAN BE RUN IN DOKCER
 
 ChatGPT
 Yes, it's possible to run an application in a Docker container even if it's not running on your local PC. Docker allows you to package an application and its dependencies into a container, which can then be run on any system that supports Docker, regardless of the host operating system or environment. This makes it easier to ensure that your application behaves consistently across different environments.
