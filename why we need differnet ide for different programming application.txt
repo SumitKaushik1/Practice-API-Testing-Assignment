@@ -1,0 +1,4 @@
+IDE MAIN THING -> why we use ide 
+for specific language or differnet ide for different programming its version 
+
+b/z ide helps to download all the dependencies or liberaires that we watn to use inteh code differnt ides are updated so they have the information that this liberary has to be downlaoded from thatwebsite automatically you donot need to download manually or set up all the setting to run that code pluggin (specific to that applicatin can git or gitub )
