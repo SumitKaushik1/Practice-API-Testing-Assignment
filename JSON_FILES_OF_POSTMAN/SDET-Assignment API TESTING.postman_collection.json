@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "4a9ef2f8-5ce3-4007-a506-42e544e12292",
+		"name": "SDET-Assignment API TESTING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23880231",
+		"_collection_link": "https://bold-meteor-421879.postman.co/workspace/MTB-ASSIGNMENT-~0c52ba9b-d2d7-4922-b4ff-f569248b89f2/collection/23880231-4a9ef2f8-5ce3-4007-a506-42e544e12292?action=share&source=collection_link&creator=23880231"
+	},
+	"item": [
+		{
+			"name": "1.post_request_create_record",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Sumit@123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "root",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-session-token",
+						"value": "authorized-user",
+						"type": "text"
+					},
+					{
+						"key": "user-agent",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1234567890\",\r\n    \"name\": \"JohnDoe\",\r\n    \"phone_number\": \"5551234908\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.post_request_create_record_500_error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// the server encountered an unexpected condition that prevented it from fulfilling the request.\r",
+							"//database has the unique constraint that it must not be repeated but you are making the request to maket same record of same id it will 500\r",
+							"pm.test(\"Status code is 500 internal server error\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Sumit@123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "root",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-session-token",
+						"value": "authorized-user",
+						"type": "text"
+					},
+					{
+						"key": "user-agent",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1234567890\",\r\n    \"name\": \"JohnDoe\",\r\n    \"phone_number\": \"5551234908\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.Get_request_record",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-session-token",
+						"value": "authorized-user",
+						"type": "text"
+					},
+					{
+						"key": "user-agent",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api?id=1234567890",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1234567890"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
